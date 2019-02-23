@@ -1,0 +1,3 @@
+# bash
+
+My terminal settings
