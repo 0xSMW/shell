@@ -3,6 +3,28 @@
 source ~/.profile
 source ~/.bash-git-prompt/gitprompt.sh
 
+# General Aliases
+alias ls='ls -la'
+alias cds='cd ~/Sites'
+alias cdc='cd ~/Code'
+alias trash='rm -rf ~/.Trash/* '
+
+# Git Aliases
+alias g='git '
+alias gi='git init '
+alias gs='git status'
+alias gss='git status -sb '
+alias ga='git add '
+alias gc='git commit -m '
+alias gac='ga -A && gc '
+alias gp='git push '
+alias gpo='git push origin '
+alias gpom='git push origin master'
+alias gr='git rm -r '
+alias gb='git checkout -b '
+alias gc-='git checkout - '
+alias gd='git diff '
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
