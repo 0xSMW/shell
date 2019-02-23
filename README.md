@@ -1,3 +1,3 @@
-# bash
+# Shell
 
 My terminal settings
