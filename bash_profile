@@ -9,7 +9,10 @@ alias cds='cd ~/Sites'
 alias cdc='cd ~/Code'
 alias trash='rm -rf ~/.Trash/* '
 alias atom='open -a Atom'
+alias bashatom='open -a Atom ~/.bash_profile'
 alias reload='source ~/.bash_profile'
+alias clone='wget -mkEpnp'
+alias sshae='ssh serveradmin@stephenwalker.com@aethelyon.com'
 
 # Git Aliases
 alias g='git '
