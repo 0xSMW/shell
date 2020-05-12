@@ -1,0 +1,72 @@
+source ~/.profile
+#source ~/.bash-git-prompt/gitprompt.sh
+
+# General Aliases
+alias ls='ls -a'
+alias cds='cd ~/Sites'
+alias cdc='cd ~/Code'
+alias trash='rm -rf ~/.Trash/* '
+alias atom='open -a Atom'
+alias bashatom='open -a Atom ~/.zshrc'
+alias reload='source ~/.zshrc'
+alias clone='wget -mkEpnp -e robots=off --user-agent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3) Gecko/2008092416 Firefox/3.0.3"'
+
+## SSH
+alias sshae='ssh serveradmin@aethelyon.com@aethelyon.com'
+alias sshss='ssh -i stormnet root@h1.securitystorm.net'
+
+# Git Aliases
+alias g='git '
+alias gi='git init '
+alias gs='git status'
+alias gss='git status -sb '
+alias ga='git add '
+alias gc='git commit -m '
+alias gac='ga -A && gc '
+alias gp='git push '
+alias gpo='git push origin '
+alias gpom='git push origin master'
+alias gr='git rm -r '
+alias gb='git checkout -b '
+alias gc-='git checkout - '
+alias gd='git diff '
+
+# Historical Grep
+function hist {
+	history | grep $1
+}
+
+# NVM
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
+# Bash Completion
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#    . $(brew --prefix)/etc/bash_completion
+# fi
+
+# Shell Colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# RVM
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# export PATH=/usr/local/Cellar/ruby/2.5.3/bin:$PATH
+# added by Anaconda3 2019.03 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/stephenwalker/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/stephenwalker/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/stephenwalker/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/stephenwalker/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
