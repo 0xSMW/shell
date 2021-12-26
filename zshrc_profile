@@ -37,7 +37,6 @@ function hist {
 	history | grep $1
 }
 
-
 # Shell Colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
