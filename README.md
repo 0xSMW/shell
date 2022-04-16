@@ -1,3 +1,3 @@
 # Shell
 
-My terminal settings
+My laptop settings
